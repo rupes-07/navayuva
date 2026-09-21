@@ -9,7 +9,6 @@ export function slugify(value: string): string {
 }
 
 export function createUniqueSlug(value: string, suffix: string): string {
-{
   const base = slugify(value) || 'item';
   return `${base}-${suffix.slice(0, 12)}`;
 }
